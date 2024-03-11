@@ -1,3 +1,28 @@
 .blue-color {
     color: cyan;
 }
+
+#content {
+    display: grid;
+    grid-template-columns: 1fr 250px 1fr;
+    grid-template-rows: 1fr 50px 1fr 50px 10px;
+    width: 100vw;
+    height: 95vh;
+    background-image: url('./img/ramen.jpg');
+}
+
+.center, .footer {
+    text-align: center;
+    color: black;
+    font-size: 24px;
+}
+
+.center {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.footer {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}

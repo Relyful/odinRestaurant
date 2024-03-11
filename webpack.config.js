@@ -7,10 +7,11 @@ const config = {
   devtool: 'inline-source-map',
   devServer: {
     static: './dist',
+    watchFiles: ['src/**/*'],
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[filename].bundle.js'
+    filename: '[name].bundle.js'
   },
   module: {
     rules: [
@@ -22,20 +23,9 @@ const config = {
         ]
       },
       {
-        test: /\.svg$/,
-        use: 'file-loader'
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       },
-      {
-        test: /\.png$/,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              mimetype: 'image/png'
-            }
-          }
-        ]
-      }
     ]
   },
   plugins: [

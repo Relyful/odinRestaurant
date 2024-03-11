@@ -1,9 +1,23 @@
 import './style.css';
+import loadHome from './home';
+import loadMenu from './menu';
 
-const hello = document.createElement('div');
-hello.innerText = 'H4ck3rm4n';
-hello.classList.add('blue-color');
+const container = document.querySelector('#content');
+const homeBut = document.querySelector('.home');
+const menuBut = document.querySelector('.menu');
+const aboutBut = document.querySelector('.about');
 
-const container = document.querySelector('main');
 
-container.appendChild(hello);
+loadHome();
+
+[homeBut, menuBut, aboutBut].forEach((element) => {
+    element.addEventListener('click', (e) => {
+        container.innerHTML = "";
+        if (e.target == menuBut) {
+            loadMenu();
+        }
+        else if(e.target == homeBut) {
+            loadHome();
+        }
+    })
+})
