@@ -4,6 +4,8 @@
 
 body {
     background-image: url('./img/ramen.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 nav {
@@ -51,7 +53,7 @@ nav button {
 
 
 
-#content {
+.contentMenu {
     display: flex;
     justify-content: center;
 }
@@ -86,11 +88,16 @@ nav button {
 }
 
 .menuRamenPic {
-    width: 90%;
-    height: 90%;
+    width: 70%;
+    height: auto;
+}
+
+.menuRamenPic2 {
+    width: 85%;
+    height: auto;
 }
 
 .menuItem {
-    padding-top: 20%;
+    padding-top: 30%;
     align-self: start;
 }
