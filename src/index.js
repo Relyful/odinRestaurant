@@ -8,11 +8,12 @@ const menuBut = document.querySelector('.menu');
 const aboutBut = document.querySelector('.about');
 
 
-loadHome();
+// loadHome();
 
 [homeBut, menuBut, aboutBut].forEach((element) => {
     element.addEventListener('click', (e) => {
         container.innerHTML = "";
+        container.classList.remove(...container.classList);
         if (e.target == menuBut) {
             loadMenu();
         }
