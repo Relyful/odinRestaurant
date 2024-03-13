@@ -116,7 +116,7 @@ nav button {
 .menuItem {
     margin-top: 30%;
     align-self: start;
-    font-size: 16px;
+    font-size: 14px;
     padding: 5px;
 }
 
@@ -133,11 +133,13 @@ nav button {
     padding-bottom: 5%;
     font-size: 26px;
     color: white;
+    display: flex;
+    justify-content: center;
 }
 
 .aboutContent {
     overflow: auto;
-    font-size: 18px;
+    font-size: 16px;
     font-style: italic;
     color: white;
 }
