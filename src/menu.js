@@ -34,12 +34,12 @@ export default function menu() {
     menuItem1.classList.add('menuItem');
 
     const menuH5 = document.createElement('h5');
-    menuH5.innerText = 'Ramen Shoyu';
+    menuH5.innerText = 'Shoyu Ramen';
     const menuP = document.createElement('p');
     menuP.innerText = 'Soy sauce flavor and a clear soup broth served with medium-thin curly noodles';
 
     const menuH51 = document.createElement('h5');
-    menuH51.innerText = 'Ramen Shoyu';
+    menuH51.innerText = 'Tonkotsu Shoyu';
     const menuP1 = document.createElement('p');
     menuP1.innerText = 'Soy sauce flavor and a clear soup broth served with medium-thin curly noodles';
 

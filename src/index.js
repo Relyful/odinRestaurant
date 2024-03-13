@@ -1,7 +1,7 @@
 import './style.css';
 import loadHome from './home';
 import loadMenu from './menu';
-import loadABout from './about';
+import loadAbout from './about';
 
 const container = document.querySelector('#content');
 const homeBut = document.querySelector('.home');
