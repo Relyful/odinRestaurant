@@ -1,6 +1,7 @@
 import './style.css';
 import loadHome from './home';
 import loadMenu from './menu';
+import loadABout from './about';
 
 const container = document.querySelector('#content');
 const homeBut = document.querySelector('.home');
@@ -19,6 +20,9 @@ loadHome();
         }
         else if(e.target == homeBut) {
             loadHome();
+        }
+        else if(e.target == aboutBut) {
+            loadAbout();
         }
     })
 })
